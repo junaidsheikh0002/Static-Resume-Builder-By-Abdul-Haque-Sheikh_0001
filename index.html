@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="min-h-screen bg-gradient">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="nav-title">Resume Builder</h1>
+                <ul class="nav-links">
+                    <li><a href="#personal-info">Personal Info</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content-wrapper">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="main-title">Static Resume Builder</h1>
+                <p class="subtitle">By Abdul Haque Sheikh</p>
+
+                <!-- Profile Image Section -->
+                <div class="profile-image-container">
+                    <img id="profileImage" class="profile-image" src="https://media.licdn.com/dms/image/v2/D4D35AQFA21oPTH2CsQ/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1706945516100?e=1731207600&v=beta&t=VEKlgGx0F08HBYyeG2IuaZ5fPM4mhIwmbUnsXg6qmw8"
+                        alt="Profile Image">
+                </div>
+
+                <form class="space-y-6" id="resumeForm">
+                    <!-- Personal Information -->
+                    <div class="card" id="personal-info">
+                        <div class="card-header">
+                            <h2 class="card-title">Personal Information</h2>
+                        </div>
+                        <div class="card-content">
+                            <div class="input-group">
+                                <label for="name" class="label">Name:</label>
+                                <input type="text" id="name" class="input" placeholder="Enter your full name">
+                            </div>
+                            <div class="input-group">
+                                <label for="email" class="label">Email:</label>
+                                <input type="email" id="email" class="input" placeholder="Enter your email address">
+                            </div>
+                            <div class="input-group">
+                                <label for="phone" class="label">Phone:</label>
+                                <input type="tel" id="phone" class="input" placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Section -->
+                    <div class="card" id="education">
+                        <div class="card-header">
+                            <h2 class="card-title">Education</h2>
+                        </div>
+                        <div class="card-content">
+                            <div class="input-group">
+                                <label for="education" class="label">Education Details:</label>
+                                <textarea id="education" class="textarea" placeholder="Enter your educational background"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.ts" type="module"></script>
+</body>
+
+</html>
